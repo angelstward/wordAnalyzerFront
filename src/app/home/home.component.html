@@ -1,0 +1,30 @@
+<app-header></app-header>
+
+<div class="form">
+  <textarea
+    class="textarea"
+    name="textarea"
+    rows="10"
+    cols="50"
+    placeholder="Escribe algo"
+    [(ngModel)]="textToSend"    
+    (keyup)="ApplyChange($event.target.value)"
+  ></textarea>
+  <div>
+    <button (click)="sendText()" [disabled]="textToSend ===''" class="btn">Enviar</button>
+    <button (click)="cleanText()"  class="btn">Limpiar</button>
+  </div>
+</div>
+
+<div class="container-table">
+  <table *ngIf="listWords" class="table">
+    <tr>
+      <th>Palabra</th>
+      <th>Número de repeticiones</th>
+    </tr>
+    <tr *ngFor="let item of listWords">
+      <td>{{item.description}}</td>
+      <td>{{item.count}}</td>
+    </tr>     
+  </table>
+</div>
