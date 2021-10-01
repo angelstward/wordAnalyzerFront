@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  secret: "passwordJWT"
+  secret: "passwordJWT",
+  apiUrl: "https://localhost:44374/"
 };
 
 /*

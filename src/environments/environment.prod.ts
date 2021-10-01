@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  secret: "passwordJWT",
+  apiUrl: "https://localhost:44374/"
 };
