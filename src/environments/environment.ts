@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   secret: "passwordJWT",
-  apiUrl: "https://api-word-analyzer.azurewebsites.net"
+  apiUrl: "https://api-word-analyzer.azurewebsites.net/"
 };
 
 /*
